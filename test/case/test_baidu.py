@@ -45,9 +45,9 @@ if __name__ == "__main__":
         runner.run(TestBaidu('test_search'))
     e = Email(title='百度搜索测试报告',
               message='这是今天的测试报告，请查收！',
-              receiver='727084494@qq.com',
+              receiver='xxx@qq.com',
               server='smtp.163.com',
-              sender='18819414679@163.com',
+              sender='xxx@163.com',
               password='',
               path=report
               )
