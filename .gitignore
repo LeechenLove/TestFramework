@@ -107,3 +107,4 @@ venv.bak/
 
 # this is i add ignore file
 .idea/
+/test/case/test_baidu.py
