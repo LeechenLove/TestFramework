@@ -3,8 +3,7 @@ import yaml
 from xlrd import open_workbook
 import sys
 
-base_path = os.path.split(os.path.dirname(os.path.abspath(__file__)))[0]
-config_file = os.path.join(base_path, 'config', 'config.yaml')
+
 class YamlReader:
     def __init__(self, yamlf):
         if os.path.exists(yamlf):
@@ -76,11 +75,11 @@ class ExcelReader:
         return self._data
 
 if __name__ == '__main__':
-    y = 'C:/Users/Administrator/Desktop/TestFramework1/Test_Framework/config/config.yaml'
+    y = 'C:/Users/Administrator/Desktop/TestFramework/config/config.yaml'
     reader = YamlReader(y)
     print(reader.data)
 
-    e = 'C:/Users/Administrator/Desktop/TestFramework1/Test_Framework/data/baidu.xlsx'
+    e = 'C:/Users/Administrator/Desktop/TestFramework/data/baidu.xlsx'
     reader = ExcelReader(e, title_line=True)
     print(reader.data)
     print(sys.path)

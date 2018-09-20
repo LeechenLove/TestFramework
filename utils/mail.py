@@ -59,7 +59,7 @@ class Email:
         #连接服务器并发送
         try:
             smtp_server = smtplib.SMTP(self.server) #连接server
-        except (gaierror and errot) as e:
+        except (gaierror and error) as e:
             logger.exception("发送邮件失败，无法连接到SMTP服务器，检查网络以及SMTP服务器。 %s", e)
         else:
             try:
